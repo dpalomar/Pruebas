@@ -1,0 +1,34 @@
+# /
+/bin
+/target
+/WEB-INF
+/*.iml
+/*.ipr
+/*.iws
+/.idea
+.gradle
+/build
+/m2e-wtp
+chromedriver.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+
+# Eclipse files
+
+.settings/
+.metadata 
+.classpath
+.springBeans
+.project
+.checkstyle
+.pmd
+.pmdruleset
+.metadata
+
+# maven release files
+pom.xml.releaseBackup
+release.properties
