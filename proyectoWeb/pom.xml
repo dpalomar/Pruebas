@@ -14,7 +14,10 @@
 		<url>www.adamaconsulting.es</url>
 	</organization>
 	<description>Aplicación simple para mostrar el uso de Maven en acción cambiando el logger por slf4j.</description>
-
+<!--
+Configuration based on Mike Ensor post: http://www.ensor.cc/2013/01/how-to-publish-maven-site-docs-to.html
+Thanks guy.
+ -->
 <properties>
 	<spring.version>4.0.3.RELEASE</spring.version>	
         <!-- ========================  -->
@@ -28,9 +31,9 @@
         <!-- @OVERRIDE this property per each project -->
         <repository.domain>github.com</repository.domain>
         <!-- @OVERRIDE this property per each project -->
-        <repository.user>mike-ensor</repository.user>
+        <repository.user>dpalomar</repository.user>
         <!-- @OVERRIDE this property per each project -->
-        <repository.name>clickconcepts-master-pom</repository.name>
+        <repository.name>pruebas</repository.name>
 
         <!-- =============================================  -->
         <!--    BITBUCKET SPECIFIC DOCUMENTATION CHANGES    -->
@@ -43,7 +46,7 @@
         <!-- @OVERRIDE [This is the branch that the web "pages" are located in. For GitHub, gh-pages; for BitBucket, master] -->
         <scm-publish.scmBranch>gh-pages</scm-publish.scmBranch>
         <!-- @OVERRIDE [SCM location for documentation repository]  -->
-        <scm-publish.pubScmUrl>scm:git:git@github.com:mike-ensor/clickconcepts-master-pom.git</scm-publish.pubScmUrl>
+        <scm-publish.pubScmUrl>scm:git:git@github.com:dpalomar/pruebas.git</scm-publish.pubScmUrl>
         <scm-publish.siteDocOuputDirectory>${project.reporting.outputDirectory}</scm-publish.siteDocOuputDirectory>
 
         <!-- ========================  -->
@@ -51,8 +54,8 @@
         <!-- ========================  -->
 
         <!-- encoding of project resources -->
-        <maven.compiler.source>1.7</maven.compiler.source>
-        <maven.compiler.target>1.7</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <surefire.jvm.args>-Xms256m -Xmx512m -XX:MaxPermSize=512m</surefire.jvm.args>
@@ -107,7 +110,7 @@
         <!-- @OVERRIDE as needed  -->
         <maven-pmd-plugin.configLocation>${project.basedir}/code-analysis/pmd.xml</maven-pmd-plugin.configLocation>
         <!-- @OVERRIDE as needed -->
-        <cobertura.base.package>com.clickconcepts</cobertura.base.package>
+        <cobertura.base.package>es.adama</cobertura.base.package>
 
         <!-- ==========================  -->
         <!--    CHANGE LOG PROPERTIES    -->
