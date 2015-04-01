@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<name>Generador de números aleatorios</name>
-	<url>http://www.adamaconsulting.es</url>
+	<!--<url>http://www.adamaconsulting.es</url> -->
 
 	<organization>
 		<name>Adama Consulting</name>
@@ -93,7 +93,7 @@ Thanks guy.
         <plugin.release.version>2.5</plugin.release.version>
         <plugin.resources.version>2.6</plugin.resources.version>
         <plugin.scm-publish.version>1.0</plugin.scm-publish.version>
-        <plugin.site.version>3.2</plugin.site.version>
+        <plugin.site.version>3.3</plugin.site.version>
         <plugin.source.version>2.2.1</plugin.source.version>
         <plugin.surefire.version>2.17</plugin.surefire.version>
         <plugin.taglist.version>2.4</plugin.taglist.version>
@@ -155,13 +155,7 @@ Thanks guy.
         <maven>3.0.3</maven>
     </prerequisites>
 
-    <distributionManagement>
 
-        <site>
-            <id>site-docs</id>
-            <url>file://${site-docs.url}</url>
-        </site>
-    </distributionManagement>
 
     <url>http://${repository.domain}/${repository.user}/${repository.name}</url>
     <inceptionYear>2015</inceptionYear>
@@ -172,16 +166,17 @@ Thanks guy.
             <distribution>repo</distribution>
         </license>
     </licenses>
-
-
-
-    
-
     <issueManagement>
         <url>https://www.github.com/${repository.user}/${repository.name}/issues</url>
         <system>Github Issues</system>
     </issueManagement>
 
+    <distributionManagement>
+        <site>
+            <id>site-docs</id>
+            <url>file://${site-docs.url}</url>
+        </site>
+    </distributionManagement>
 
 	
     <build>
@@ -759,9 +754,8 @@ Thanks guy.
                     <warName>miwebapp</warName>
                 </configuration>
             </plugin>
-        </plugins>
-        <!-- mostrado como ejemplo, segunda prioridad para el nombre del WAR -->
-        <finalName>miwebappSegundaOpcion</finalName>
+       
+    
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-enforcer-plugin</artifactId>
@@ -855,6 +849,8 @@ Thanks guy.
                 <artifactId>maven-site-plugin</artifactId>
             </plugin>
         </plugins>
+		    <!-- mostrado como ejemplo, segunda prioridad para el nombre del WAR -->
+        <finalName>miwebappSegundaOpcion</finalName>
     </build>
 
    <dependencies>
