@@ -339,7 +339,7 @@
 						<!-- Set above but can be overridden in settings.xml file -->
 						<source>${maven.compiler.source}</source>
 						<target>${maven.compiler.target}</target>
-						<encoding>UTF-8</encoding>
+						<encoding>ISO-8859-1</encoding>
 						<meminitial>128m</meminitial>
 						<maxmem>512m</maxmem>
 					</configuration>
