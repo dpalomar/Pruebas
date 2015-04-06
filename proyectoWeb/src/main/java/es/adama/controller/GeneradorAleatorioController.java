@@ -34,6 +34,7 @@ import es.adama.aleatorios.GeneradorAleatorio;
  */
 @Controller
 public class GeneradorAleatorioController {
+	//FIXME ejemplo de uso de fixme. Serviría para obligar a la eliminación de este comentario
 	// Usando slf4j api directamente - elimina los comentarios de este código después de que las dependencias de SLFJ han sido añadidas
 	// private static final Logger logger = LoggerFactory.getLogger(IdentifierGenerationController.class);
 

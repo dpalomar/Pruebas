@@ -37,7 +37,7 @@ public class DefaultRandomNumberGeneratorTest
     {
 	Assert.assertSame("El nombre no es el esperado: ", "Generador aleatorio de números", generadorAleatorio.name());
     }
-
+//TODO Ejemplo de todo para la documentación. Serviría para eliminar el test ignorado
     @Ignore
     @Test
     public void testNumeroAleatorio()
