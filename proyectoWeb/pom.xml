@@ -173,6 +173,7 @@
 
 	<url>http://${repository.domain}/${repository.user}/${repository.name}</url>
 	<inceptionYear>2015</inceptionYear>
+
 	<licenses>
 		<license>
 			<name>Creative Commons By, Version 3.0</name>
@@ -530,6 +531,14 @@
 					<artifactId>maven-site-plugin</artifactId>
 					<version>${plugin.site.version}</version>
 					<inherited>true</inherited>
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.maven.doxia</groupId>
+							<artifactId>doxia-module-markdown</artifactId>
+							<version>1.6</version>
+						</dependency>
+						
+					</dependencies>
 					<configuration>
 						<attach>true</attach>
 
